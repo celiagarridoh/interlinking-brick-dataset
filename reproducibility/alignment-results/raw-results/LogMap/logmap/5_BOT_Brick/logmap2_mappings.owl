@@ -1,0 +1,285 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#"
+     xml:base="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl"
+     xmlns:mappings="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#entity1 -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#entity1"/>
+    
+
+
+    <!-- http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#entity2 -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#entity2"/>
+    
+
+
+    <!-- http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#measure -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#measure"/>
+    
+
+
+    <!-- http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#relation -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#relation"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://schema.org/Person -->
+
+    <owl:Class rdf:about="http://schema.org/Person">
+        <owl:equivalentClass rdf:resource="https://schema.org/Person"/>
+    </owl:Class>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.7030000000000001</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://schema.org/Person</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://schema.org/Person</entity1>
+        <owl:annotatedSource rdf:resource="http://schema.org/Person"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedTarget rdf:resource="https://schema.org/Person"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Building -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Building">
+        <owl:equivalentClass rdf:resource="https://w3id.org/bot#Building"/>
+    </owl:Class>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Building</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://w3id.org/bot#Building</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Building"/>
+        <owl:annotatedTarget rdf:resource="https://w3id.org/bot#Building"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Interface -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Interface">
+        <owl:equivalentClass rdf:resource="https://w3id.org/bot#Interface"/>
+    </owl:Class>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.505</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Interface</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://w3id.org/bot#Interface</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Interface"/>
+        <owl:annotatedTarget rdf:resource="https://w3id.org/bot#Interface"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Site -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Site">
+        <owl:equivalentClass rdf:resource="https://w3id.org/bot#Site"/>
+    </owl:Class>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Site</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://w3id.org/bot#Site</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Site"/>
+        <owl:annotatedTarget rdf:resource="https://w3id.org/bot#Site"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Space -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Space">
+        <owl:equivalentClass rdf:resource="https://w3id.org/bot#Space"/>
+    </owl:Class>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Space</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://w3id.org/bot#Space</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Space"/>
+        <owl:annotatedTarget rdf:resource="https://w3id.org/bot#Space"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Storey -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Storey">
+        <owl:equivalentClass rdf:resource="https://w3id.org/bot#Storey"/>
+    </owl:Class>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.505</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Storey</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://w3id.org/bot#Storey</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Storey"/>
+        <owl:annotatedTarget rdf:resource="https://w3id.org/bot#Storey"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Zone -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Zone">
+        <owl:equivalentClass rdf:resource="https://w3id.org/bot#Zone"/>
+    </owl:Class>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Zone</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://w3id.org/bot#Zone</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Zone"/>
+        <owl:annotatedTarget rdf:resource="https://w3id.org/bot#Zone"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://schema.org/Person -->
+
+    <owl:Class rdf:about="https://schema.org/Person"/>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.7030000000000001</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://schema.org/Person</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://schema.org/Person</entity1>
+        <owl:annotatedSource rdf:resource="http://schema.org/Person"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedTarget rdf:resource="https://schema.org/Person"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/bot#Building -->
+
+    <owl:Class rdf:about="https://w3id.org/bot#Building"/>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Building</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://w3id.org/bot#Building</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Building"/>
+        <owl:annotatedTarget rdf:resource="https://w3id.org/bot#Building"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/bot#Interface -->
+
+    <owl:Class rdf:about="https://w3id.org/bot#Interface"/>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.505</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Interface</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://w3id.org/bot#Interface</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Interface"/>
+        <owl:annotatedTarget rdf:resource="https://w3id.org/bot#Interface"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/bot#Site -->
+
+    <owl:Class rdf:about="https://w3id.org/bot#Site"/>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Site</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://w3id.org/bot#Site</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Site"/>
+        <owl:annotatedTarget rdf:resource="https://w3id.org/bot#Site"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/bot#Space -->
+
+    <owl:Class rdf:about="https://w3id.org/bot#Space"/>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Space</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://w3id.org/bot#Space</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Space"/>
+        <owl:annotatedTarget rdf:resource="https://w3id.org/bot#Space"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/bot#Storey -->
+
+    <owl:Class rdf:about="https://w3id.org/bot#Storey"/>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.505</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Storey</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://w3id.org/bot#Storey</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Storey"/>
+        <owl:annotatedTarget rdf:resource="https://w3id.org/bot#Storey"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://w3id.org/bot#Zone -->
+
+    <owl:Class rdf:about="https://w3id.org/bot#Zone"/>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Zone</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://w3id.org/bot#Zone</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Zone"/>
+        <owl:annotatedTarget rdf:resource="https://w3id.org/bot#Zone"/>
+    </owl:Axiom>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 1.3.8.1099) http://owlapi.sourceforge.net -->
+

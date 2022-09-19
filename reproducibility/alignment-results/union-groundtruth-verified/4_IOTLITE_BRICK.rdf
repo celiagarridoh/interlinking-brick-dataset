@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment'
+	 xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' 
+	 xmlns:xsd='http://www.w3.org/2001/XMLSchema#' 
+	 alignmentSource='ManuallyVerified'>
+
+<Alignment>
+	<xml>yes</xml>
+	<level>0</level>
+	<type>??</type>
+	<onto1>http://purl.oclc.org/NET/UNIS/fiware/iot-lite#</onto1>
+	<onto2>https://brickschema.org/schema/1.2/Brick</onto2>
+	<uri1></uri1>
+	<uri2>https://brickschema.org/schema/1.2/Brick</uri2>
+
+    <map>
+		<Cell>
+			<entity1 rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#System"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#System"/>
+			<measure "xsd:float">1.00</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+    <map>
+		<Cell>
+			<entity1 rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Sensor"/>
+			<measure "xsd:float">1.00</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+    <map>
+		<Cell>
+			<entity1 rdf:resource="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#TagDevice"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Tag"/>
+			<measure "xsd:float">1.00</measure>
+			<relation>=</relation>
+		</Cell>
+	</map></Alignment>
+</rdf:RDF>

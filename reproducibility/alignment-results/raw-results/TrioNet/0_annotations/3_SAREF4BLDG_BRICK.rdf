@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='utf-8'?>
+        <rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment'
+            xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' 
+            xmlns:xsd='http://www.w3.org/2001/XMLSchema#' 
+            alignmentSource='TrioNet'>
+
+        <Alignment>
+            <xml>yes</xml>
+            <level></level>
+            <type></type>
+            <onto1>SAREF4BLDG</onto1>
+            <onto2>Brick</onto2>
+            <uri1></uri1>
+            <uri2>https://brickschema.org/schema/1.2/Brick</uri2>
+        
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://saref.etsi.org/core/Sensor"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Sensor"/>
+                    <measure "xsd:float">0.9999999970887791</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://saref.etsi.org/saref4bldg/Condenser"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Condenser"/>
+                    <measure "xsd:float">0.9999999970887791</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://saref.etsi.org/saref4bldg/Transformer"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Transformer"/>
+                    <measure "xsd:float">0.9999999970887791</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://saref.etsi.org/saref4bldg/Sensor"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Sensor"/>
+                    <measure "xsd:float">0.9999999970887791</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://saref.etsi.org/saref4bldg/Pump"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Pump"/>
+                    <measure "xsd:float">0.9999999970887791</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://saref.etsi.org/saref4bldg/Humidifier"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Humidifier"/>
+                    <measure "xsd:float">0.9999999970887791</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://saref.etsi.org/saref4bldg/Filter"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Filter"/>
+                    <measure "xsd:float">0.9999999970887791</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://saref.etsi.org/saref4bldg/Fan"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Fan"/>
+                    <measure "xsd:float">0.9999999970887791</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://saref.etsi.org/saref4bldg/Alarm"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Alarm"/>
+                    <measure "xsd:float">0.9999999970887791</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://saref.etsi.org/saref4bldg/Damper"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Damper"/>
+                    <measure "xsd:float">0.9999999970887791</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://saref.etsi.org/saref4bldg/Compressor"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Compressor"/>
+                    <measure "xsd:float">0.9999999970887791</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://saref.etsi.org/saref4bldg/Coil"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Coil"/>
+                    <measure "xsd:float">0.9999999970887791</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://saref.etsi.org/saref4bldg/Chiller"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Chiller"/>
+                    <measure "xsd:float">0.9999999970887791</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://saref.etsi.org/saref4bldg/Building"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Building"/>
+                    <measure "xsd:float">0.9999999970887791</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://saref.etsi.org/saref4bldg/Boiler"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Boiler"/>
+                    <measure "xsd:float">0.9999999970887791</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://saref.etsi.org/saref4bldg/Valve"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Valve"/>
+                    <measure "xsd:float">0.9999999970887791</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://saref.etsi.org/saref4bldg/CoolingTower"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Cooling_Tower"/>
+                    <measure "xsd:float">0.9995345347312758</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://saref.etsi.org/saref4bldg/HeatExchanger"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Heat_Exchanger"/>
+                    <measure "xsd:float">0.9995345347312758</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://saref.etsi.org/saref4bldg/SpaceHeater"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Space_Heater"/>
+                    <measure "xsd:float">0.9995345347312758</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://saref.etsi.org/saref4bldg/BuildingObject"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Building"/>
+                    <measure "xsd:float">0.8616083228731509</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://saref.etsi.org/saref4bldg/BuildingDevice"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Building"/>
+                    <measure "xsd:float">0.8616083228731509</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://saref.etsi.org/saref4bldg/ShadingDevice"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Shading_System"/>
+                    <measure "xsd:float">0.8616083228731509</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map></Alignment>
+        </rdf:RDF>
+        

@@ -1,0 +1,3 @@
+source-uri,target-uri
+https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcProperty,https://brickschema.org/schema/Brick#EntityProperty
+https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSystem,https://brickschema.org/schema/Brick#System

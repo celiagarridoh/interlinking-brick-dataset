@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+        <rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment'
+            xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' 
+            xmlns:xsd='http://www.w3.org/2001/XMLSchema#' 
+            alignmentSource='TrioNet'>
+
+        <Alignment>
+            <xml>yes</xml>
+            <level></level>
+            <type></type>
+            <onto1>BOT</onto1>
+            <onto2>Brick</onto2>
+            <uri1></uri1>
+            <uri2>https://brickschema.org/schema/1.2/Brick</uri2>
+        
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://w3id.org/bot#Building"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Building"/>
+                    <measure "xsd:float">1.0</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://w3id.org/bot#Interface"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Interface"/>
+                    <measure "xsd:float">1.0</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://w3id.org/bot#Site"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Site"/>
+                    <measure "xsd:float">1.0</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://w3id.org/bot#Space"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Space"/>
+                    <measure "xsd:float">1.0</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://w3id.org/bot#Storey"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Storey"/>
+                    <measure "xsd:float">1.0</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://w3id.org/bot#Zone"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Zone"/>
+                    <measure "xsd:float">1.0</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map></Alignment>
+        </rdf:RDF>
+        

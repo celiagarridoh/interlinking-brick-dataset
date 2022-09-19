@@ -1,0 +1,11 @@
+source-uri,target-uri
+https://saref.etsi.org/core/Sensor,https://brickschema.org/schema/Brick#Sensor
+https://saref.etsi.org/saref4bldg/Alarm,https://brickschema.org/schema/Brick#Alarm
+https://saref.etsi.org/saref4bldg/Boiler,https://brickschema.org/schema/Brick#Boiler
+https://saref.etsi.org/saref4bldg/Building,https://brickschema.org/schema/Brick#Building
+https://saref.etsi.org/saref4bldg/Chiller,https://brickschema.org/schema/Brick#Chiller
+https://saref.etsi.org/saref4bldg/Coil,https://brickschema.org/schema/Brick#Coil
+https://saref.etsi.org/saref4bldg/Compressor,https://brickschema.org/schema/Brick#Compressor
+https://saref.etsi.org/saref4bldg/Condenser,https://brickschema.org/schema/Brick#Condenser
+https://saref.etsi.org/saref4bldg/Damper,https://brickschema.org/schema/Brick#Damper
+https://saref.etsi.org/saref4bldg/Fan,https://brickschema.org/schema/Brick#Fan

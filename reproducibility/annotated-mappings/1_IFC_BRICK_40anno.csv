@@ -1,0 +1,5 @@
+source-uri,target-uri
+https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcFan,https://brickschema.org/schema/Brick#Fan
+https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSite,https://brickschema.org/schema/Brick#Site
+https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpace,https://brickschema.org/schema/Brick#Space
+https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpace,https://brickschema.org/schema/Brick#Space

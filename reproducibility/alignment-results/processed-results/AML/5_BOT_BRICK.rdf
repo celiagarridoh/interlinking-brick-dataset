@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment'
+	 xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' 
+	 xmlns:xsd='http://www.w3.org/2001/XMLSchema#' 
+	 alignmentSource='AgreementMakerLight'>
+
+<Alignment>
+	<xml>yes</xml>
+	<level>0</level>
+	<type>11</type>
+	<onto1>https://w3id.org/bot#</onto1>
+	<onto2>https://brickschema.org/schema/1.2/Brick</onto2>
+	<uri1>https://w3id.org/bot#</uri1>
+	<uri2>https://brickschema.org/schema/1.2/Brick</uri2>
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://w3id.org/bot#Storey"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Storey"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.99</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://w3id.org/bot#Site"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Site"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.99</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://w3id.org/bot#Interface"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Interface"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.99</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://w3id.org/bot#Building"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Building"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9895</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://w3id.org/bot#Space"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Space"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9801</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://w3id.org/bot#Zone"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Zone"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9801</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+</Alignment>
+</rdf:RDF>

@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='utf-8'?>
+        <rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment'
+            xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' 
+            xmlns:xsd='http://www.w3.org/2001/XMLSchema#' 
+            alignmentSource='TrioNet'>
+
+        <Alignment>
+            <xml>yes</xml>
+            <level></level>
+            <type></type>
+            <onto1>SAREF</onto1>
+            <onto2>Brick</onto2>
+            <uri1></uri1>
+            <uri2>https://brickschema.org/schema/1.2/Brick</uri2>
+        
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://saref.etsi.org/core/Command"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Command"/>
+                    <measure "xsd:float">0.9999999870542516</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://saref.etsi.org/core/FeatureOfInterest"/>
+                    <entity2 rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+                    <measure "xsd:float">0.9999999870542516</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://saref.etsi.org/core/Gas"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Gas"/>
+                    <measure "xsd:float">0.9999999870542516</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://saref.etsi.org/core/Meter"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Meter"/>
+                    <measure "xsd:float">0.9999999870542516</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://saref.etsi.org/core/Sensor"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Sensor"/>
+                    <measure "xsd:float">0.9999999870542516</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://saref.etsi.org/core/Switch"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Switch"/>
+                    <measure "xsd:float">0.9999999870542516</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://saref.etsi.org/core/Water"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Water"/>
+                    <measure "xsd:float">0.9999999870542516</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://saref.etsi.org/core/OffCommand"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Off_Command"/>
+                    <measure "xsd:float">0.9990361263904851</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://saref.etsi.org/core/OnCommand"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#On_Command"/>
+                    <measure "xsd:float">0.9990361263904851</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://saref.etsi.org/core/TemperatureSensor"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Temperature_Sensor"/>
+                    <measure "xsd:float">0.9990361263904851</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://saref.etsi.org/core/HVAC"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#HVAC_System"/>
+                    <measure "xsd:float">0.8240906448250696</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://saref.etsi.org/core/StartStopState"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Start_Stop_Status"/>
+                    <measure "xsd:float">0.812486178270016</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map></Alignment>
+        </rdf:RDF>
+        

@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment'
+	 xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' 
+	 xmlns:xsd='http://www.w3.org/2001/XMLSchema#' 
+	 alignmentSource='AgreementMakerLight'>
+
+<Alignment>
+	<xml>yes</xml>
+	<level>0</level>
+	<type>11</type>
+	<onto1>http://purl.oclc.org/NET/UNIS/fiware/iot-lite#</onto1>
+	<onto2>https://brickschema.org/schema/1.2/Brick</onto2>
+	<uri1>http://purl.oclc.org/NET/UNIS/fiware/iot-lite#</uri1>
+	<uri2>https://brickschema.org/schema/1.2/Brick</uri2>
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Point"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9881</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#System"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#System"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9801</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Sensor"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9801</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Service"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Service_Room"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6146</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+</Alignment>
+</rdf:RDF>

@@ -1,0 +1,10 @@
+source-uri,target-uri
+https://saref.etsi.org/saref4bldg/Filter,https://brickschema.org/schema/Brick#Filter
+https://saref.etsi.org/saref4bldg/Humidifier,https://brickschema.org/schema/Brick#Humidifier
+https://saref.etsi.org/saref4bldg/Pump,https://brickschema.org/schema/Brick#Pump
+https://saref.etsi.org/saref4bldg/Sensor,https://brickschema.org/schema/Brick#Sensor
+https://saref.etsi.org/saref4bldg/Transformer,https://brickschema.org/schema/Brick#Transformer
+https://saref.etsi.org/saref4bldg/Valve,https://brickschema.org/schema/Brick#Valve
+https://saref.etsi.org/saref4bldg/CoolingTower,https://brickschema.org/schema/Brick#Cooling_Tower
+https://saref.etsi.org/saref4bldg/HeatExchanger,https://brickschema.org/schema/Brick#Heat_Exchanger
+https://saref.etsi.org/saref4bldg/SpaceHeater,https://brickschema.org/schema/Brick#Space_Heater

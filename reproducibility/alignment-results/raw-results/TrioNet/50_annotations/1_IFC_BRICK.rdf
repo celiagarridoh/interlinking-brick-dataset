@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='utf-8'?>
+        <rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment'
+            xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' 
+            xmlns:xsd='http://www.w3.org/2001/XMLSchema#' 
+            alignmentSource='TrioNet'>
+
+        <Alignment>
+            <xml>yes</xml>
+            <level></level>
+            <type></type>
+            <onto1>IFC</onto1>
+            <onto2>Brick</onto2>
+            <uri1></uri1>
+            <uri2>https://brickschema.org/schema/1.2/Brick</uri2>
+        
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCompressor"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Compressor"/>
+                    <measure "xsd:float">0.9999993659009874</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcDamper"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Damper"/>
+                    <measure "xsd:float">0.9999993659009874</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcFilter"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Filter"/>
+                    <measure "xsd:float">0.9999993659009874</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTransformer"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Transformer"/>
+                    <measure "xsd:float">0.9999993659009874</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpaceHeater"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Space_Heater"/>
+                    <measure "xsd:float">0.9642221503684532</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCoolingTower"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Cooling_Tower"/>
+                    <measure "xsd:float">0.6350614650906854</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcHeatExchanger"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Heat_Exchanger"/>
+                    <measure "xsd:float">0.6350614650906854</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcAlarm"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Alarm"/>
+                    <measure "xsd:float">0.5134678034893723</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcFan"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Fan"/>
+                    <measure "xsd:float">0.24818818672721826</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSite"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Site"/>
+                    <measure "xsd:float">0.24818818672721826</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpace"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Space"/>
+                    <measure "xsd:float">0.24818818672721826</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcProperty"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#EntityProperty"/>
+                    <measure "xsd:float">0.24355545121563893</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSystem"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#System"/>
+                    <measure "xsd:float">0.24355545121563893</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCondenser"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Condenser"/>
+                    <measure "xsd:float">0.005927892322837921</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map></Alignment>
+        </rdf:RDF>
+        

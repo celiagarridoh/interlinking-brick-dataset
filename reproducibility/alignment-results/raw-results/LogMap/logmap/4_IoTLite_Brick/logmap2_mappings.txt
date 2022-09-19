@@ -1,0 +1,3 @@
+http://purl.org/NET/ssnx/qu/qu#Unit|http://qudt.org/vocab/unit/Unit|=|0.7|CLS
+http://www.w3.org/2003/01/geo/wgs84_pos#Point|https://brickschema.org/schema/Brick#Point|=|0.7|CLS
+http://purl.oclc.org/NET/ssnx/ssn#System|https://brickschema.org/schema/Brick#System|=|0.5|CLS

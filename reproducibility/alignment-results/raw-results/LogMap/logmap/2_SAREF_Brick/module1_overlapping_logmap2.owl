@@ -1,0 +1,582 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://saref.etsi.org/core/"
+     xml:base="https://saref.etsi.org/core/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://saref.etsi.org/core/"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://saref.etsi.org/core/accomplishes -->
+
+    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/accomplishes">
+        <rdfs:range rdf:resource="https://saref.etsi.org/core/Task"/>
+        <owl:inverseOf rdf:resource="https://saref.etsi.org/core/isAccomplishedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core/actsUpon -->
+
+    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/actsUpon">
+        <rdfs:domain rdf:resource="https://saref.etsi.org/core/Command"/>
+        <rdfs:range rdf:resource="https://saref.etsi.org/core/State"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core/hasCommand -->
+
+    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/hasCommand">
+        <rdfs:range rdf:resource="https://saref.etsi.org/core/Command"/>
+        <rdfs:domain rdf:resource="https://saref.etsi.org/core/Function"/>
+        <owl:inverseOf rdf:resource="https://saref.etsi.org/core/isCommandOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core/hasFunction -->
+
+    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/hasFunction">
+        <rdfs:domain rdf:resource="https://saref.etsi.org/core/Device"/>
+        <rdfs:range rdf:resource="https://saref.etsi.org/core/Function"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core/hasSensingRange -->
+
+    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/hasSensingRange">
+        <rdfs:range rdf:resource="https://saref.etsi.org/core/Measurement"/>
+        <rdfs:domain rdf:resource="https://saref.etsi.org/core/SensingFunction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core/isAccomplishedBy -->
+
+    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/isAccomplishedBy">
+        <rdfs:domain rdf:resource="https://saref.etsi.org/core/Task"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core/isCommandOf -->
+
+    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/isCommandOf">
+        <rdfs:domain rdf:resource="https://saref.etsi.org/core/Command"/>
+        <rdfs:range rdf:resource="https://saref.etsi.org/core/Function"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core/isMeasuredIn -->
+
+    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/isMeasuredIn">
+        <rdfs:domain rdf:resource="https://saref.etsi.org/core/Measurement"/>
+        <rdfs:range rdf:resource="https://saref.etsi.org/core/UnitOfMeasure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core/measuresProperty -->
+
+    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/measuresProperty">
+        <rdfs:domain rdf:resource="https://saref.etsi.org/core/Device"/>
+        <rdfs:range rdf:resource="https://saref.etsi.org/core/Property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core/relatesToMeasurement -->
+
+    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/relatesToMeasurement">
+        <rdfs:range rdf:resource="https://saref.etsi.org/core/Measurement"/>
+        <rdfs:domain rdf:resource="https://saref.etsi.org/core/Property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://saref.etsi.org/core/relatesToProperty -->
+
+    <owl:ObjectProperty rdf:about="https://saref.etsi.org/core/relatesToProperty">
+        <rdfs:domain rdf:resource="https://saref.etsi.org/core/Measurement"/>
+        <rdfs:range rdf:resource="https://saref.etsi.org/core/Property"/>
+        <owl:inverseOf rdf:resource="https://saref.etsi.org/core/relatesToMeasurement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://saref.etsi.org/core/hasValue -->
+
+    <owl:DatatypeProperty rdf:about="https://saref.etsi.org/core/hasValue"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://saref.etsi.org/core/ActuatingFunction -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/ActuatingFunction">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Function"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/Actuator -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/Actuator">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Device"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/hasFunction"/>
+                <owl:someValuesFrom rdf:resource="https://saref.etsi.org/core/ActuatingFunction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/Command -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/Command">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/isCommandOf"/>
+                <owl:onClass rdf:resource="https://saref.etsi.org/core/Function"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/actsUpon"/>
+                <owl:allValuesFrom rdf:resource="https://saref.etsi.org/core/State"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/Commodity -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/Commodity"/>
+    
+
+
+    <!-- https://saref.etsi.org/core/Device -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/Device">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/hasFunction"/>
+                <owl:onClass rdf:resource="https://saref.etsi.org/core/Function"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/accomplishes"/>
+                <owl:onClass rdf:resource="https://saref.etsi.org/core/Task"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/measuresProperty"/>
+                <owl:allValuesFrom rdf:resource="https://saref.etsi.org/core/Property"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/FeatureOfInterest -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/FeatureOfInterest"/>
+    
+
+
+    <!-- https://saref.etsi.org/core/Function -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/Function">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/hasCommand"/>
+                <owl:onClass rdf:resource="https://saref.etsi.org/core/Command"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/Gas -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/Gas">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Commodity"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/GetCommand -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/GetCommand">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Command"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/Light -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/Light">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Property"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/Measurement -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/Measurement">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/isMeasuredIn"/>
+                <owl:allValuesFrom rdf:resource="https://saref.etsi.org/core/UnitOfMeasure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/relatesToProperty"/>
+                <owl:allValuesFrom rdf:resource="https://saref.etsi.org/core/Property"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/relatesToProperty"/>
+                <owl:onClass rdf:resource="https://saref.etsi.org/core/Property"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/hasValue"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/isMeasuredIn"/>
+                <owl:onClass rdf:resource="https://saref.etsi.org/core/UnitOfMeasure"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/Meter -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/Meter">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Device"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/hasFunction"/>
+                <owl:someValuesFrom rdf:resource="https://saref.etsi.org/core/MeteringFunction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/MeteringFunction -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/MeteringFunction">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Function"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/OffCommand -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/OffCommand">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Command"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/actsUpon"/>
+                <owl:someValuesFrom rdf:resource="https://saref.etsi.org/core/OnOffState"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/isCommandOf"/>
+                <owl:allValuesFrom rdf:resource="https://saref.etsi.org/core/OnOffFunction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://saref.etsi.org/core/OnCommand"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/OffState -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/OffState">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/OnOffState"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/OnCommand -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/OnCommand">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Command"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/actsUpon"/>
+                <owl:someValuesFrom rdf:resource="https://saref.etsi.org/core/OnOffState"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/isCommandOf"/>
+                <owl:allValuesFrom rdf:resource="https://saref.etsi.org/core/OnOffFunction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/OnOffFunction -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/OnOffFunction">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/ActuatingFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/OnOffState -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/OnOffState">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/State"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/OnState -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/OnState">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/OnOffState"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/OpenCloseState -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/OpenCloseState">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/State"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/OpenState -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/OpenState">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/OpenCloseState"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/Property -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/Property">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/relatesToMeasurement"/>
+                <owl:allValuesFrom rdf:resource="https://saref.etsi.org/core/Measurement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/SensingFunction -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/SensingFunction">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Function"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/hasSensingRange"/>
+                <owl:someValuesFrom rdf:resource="https://saref.etsi.org/core/Measurement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/Sensor -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/Sensor">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Device"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/hasFunction"/>
+                <owl:someValuesFrom rdf:resource="https://saref.etsi.org/core/SensingFunction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/StartCommand -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/StartCommand">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Command"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/actsUpon"/>
+                <owl:someValuesFrom rdf:resource="https://saref.etsi.org/core/StartStopState"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/isCommandOf"/>
+                <owl:allValuesFrom rdf:resource="https://saref.etsi.org/core/StartStopFunction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://saref.etsi.org/core/StopCommand"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/StartStopFunction -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/StartStopFunction">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/ActuatingFunction"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/StartStopState -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/StartStopState">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/State"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/State -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/State"/>
+    
+
+
+    <!-- https://saref.etsi.org/core/StopCommand -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/StopCommand">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Command"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/isCommandOf"/>
+                <owl:allValuesFrom rdf:resource="https://saref.etsi.org/core/StartStopFunction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/actsUpon"/>
+                <owl:someValuesFrom rdf:resource="https://saref.etsi.org/core/StartStopState"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/Switch -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/Switch">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Actuator"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/Task -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/Task"/>
+    
+
+
+    <!-- https://saref.etsi.org/core/Temperature -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/Temperature">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Property"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/TemperatureSensor -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/TemperatureSensor">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Sensor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/hasFunction"/>
+                <owl:someValuesFrom rdf:resource="https://saref.etsi.org/core/SensingFunction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://saref.etsi.org/core/measuresProperty"/>
+                <owl:someValuesFrom rdf:resource="https://saref.etsi.org/core/Temperature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/UnitOfMeasure -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/UnitOfMeasure"/>
+    
+
+
+    <!-- https://saref.etsi.org/core/Water -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/Water">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Commodity"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 1.3.8.1099) http://owlapi.sourceforge.net -->
+

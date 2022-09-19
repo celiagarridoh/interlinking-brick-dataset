@@ -1,0 +1,275 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://saref.etsi.org/saref4bldg/"
+     xml:base="https://saref.etsi.org/saref4bldg/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://saref.etsi.org/saref4bldg/"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://saref.etsi.org/core/Device -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/Device">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4bldg/PhysicalObject"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/core/Property -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/Property"/>
+    
+
+
+    <!-- https://saref.etsi.org/core/Sensor -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/Sensor"/>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/Alarm -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/Alarm">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4bldg/DistributionControlDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/Boiler -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/Boiler">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4bldg/EnergyConversionDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/Building -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/Building"/>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/BuildingDevice -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/BuildingDevice">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Device"/>
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4bldg/BuildingObject"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/BuildingObject -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/BuildingObject">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4bldg/PhysicalObject"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/Chiller -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/Chiller">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4bldg/EnergyConversionDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/Coil -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/Coil">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4bldg/EnergyConversionDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/Compressor -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/Compressor">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4bldg/FlowMovingDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/Condenser -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/Condenser">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4bldg/EnergyConversionDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/CoolingTower -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/CoolingTower">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4bldg/EnergyConversionDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/Damper -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/Damper">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4bldg/FlowController"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/DistributionControlDevice -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/DistributionControlDevice">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4bldg/DistributionDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/DistributionDevice -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/DistributionDevice">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4bldg/BuildingDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/DistributionFlowDevice -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/DistributionFlowDevice">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4bldg/DistributionDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/EnergyConversionDevice -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/EnergyConversionDevice">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4bldg/DistributionFlowDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/Fan -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/Fan">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4bldg/FlowMovingDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/Filter -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/Filter">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4bldg/FlowTreatmentDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/FlowController -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/FlowController">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4bldg/DistributionFlowDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/FlowMovingDevice -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/FlowMovingDevice">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4bldg/DistributionFlowDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/FlowTerminal -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/FlowTerminal">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4bldg/DistributionFlowDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/FlowTreatmentDevice -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/FlowTreatmentDevice">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4bldg/DistributionFlowDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/HeatExchanger -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/HeatExchanger">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4bldg/EnergyConversionDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/Humidifier -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/Humidifier">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4bldg/EnergyConversionDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/PhysicalObject -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/PhysicalObject"/>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/Pump -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/Pump">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4bldg/FlowMovingDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/Sensor -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/Sensor">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/core/Sensor"/>
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4bldg/DistributionControlDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/SpaceHeater -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/SpaceHeater">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4bldg/FlowTerminal"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/Transformer -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/Transformer">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4bldg/EnergyConversionDevice"/>
+    </owl:Class>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/Valve -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/Valve">
+        <rdfs:subClassOf rdf:resource="https://saref.etsi.org/saref4bldg/FlowController"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 1.3.8.1099) http://owlapi.sourceforge.net -->
+

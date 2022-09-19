@@ -1,0 +1,831 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://brickschema.org/schema/1.2/Brick#"
+     xml:base="https://brickschema.org/schema/1.2/Brick"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://brickschema.org/schema/1.2/Brick"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#hasTag -->
+
+    <owl:ObjectProperty rdf:about="https://brickschema.org/schema/Brick#hasTag">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="https://brickschema.org/schema/Brick#Tag"/>
+        <owl:inverseOf rdf:resource="https://brickschema.org/schema/Brick#isTagOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#isTagOf -->
+
+    <owl:ObjectProperty rdf:about="https://brickschema.org/schema/Brick#isTagOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="https://brickschema.org/schema/Brick#Tag"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/ns/shacl#PropertyShape -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/shacl#PropertyShape"/>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Alarm -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Alarm">
+        <rdfs:subClassOf rdf:resource="https://brickschema.org/schema/Brick#Point"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Alarm"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Point"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://brickschema.org/schema/Brick#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Boiler -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Boiler">
+        <rdfs:subClassOf rdf:resource="https://brickschema.org/schema/Brick#HVAC_Equipment"/>
+        <rdfs:subClassOf rdf:resource="https://brickschema.org/schema/Brick#Water_Heater"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Boiler"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Equipment"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Building -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Building">
+        <rdfs:subClassOf rdf:resource="https://brickschema.org/schema/Brick#Location"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Building"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Location"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Chiller -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Chiller">
+        <rdfs:subClassOf rdf:resource="https://brickschema.org/schema/Brick#HVAC_Equipment"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Chiller"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Equipment"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Class -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Class"/>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Coil -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Coil">
+        <rdfs:subClassOf rdf:resource="https://brickschema.org/schema/Brick#Heat_Exchanger"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Coil"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Equipment"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Compressor -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Compressor">
+        <rdfs:subClassOf rdf:resource="https://brickschema.org/schema/Brick#HVAC_Equipment"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Compressor"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Equipment"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Condenser -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Condenser">
+        <rdfs:subClassOf rdf:resource="https://brickschema.org/schema/Brick#HVAC_Equipment"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Condenser"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Equipment"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Cooling_Tower -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Cooling_Tower">
+        <rdfs:subClassOf rdf:resource="https://brickschema.org/schema/Brick#HVAC_Equipment"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Cooling"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Equipment"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Tower"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Damper -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Damper">
+        <rdfs:subClassOf rdf:resource="https://brickschema.org/schema/Brick#HVAC_Equipment"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Damper"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Equipment"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Electrical_Equipment -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Electrical_Equipment">
+        <rdfs:subClassOf rdf:resource="https://brickschema.org/schema/Brick#Equipment"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Electrical"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Equipment"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Equipment -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Equipment">
+        <rdfs:subClassOf rdf:resource="https://brickschema.org/schema/Brick#Class"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Equipment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Fan -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Fan">
+        <rdfs:subClassOf rdf:resource="https://brickschema.org/schema/Brick#HVAC_Equipment"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Equipment"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Fan"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Filter -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Filter">
+        <rdfs:subClassOf rdf:resource="https://brickschema.org/schema/Brick#HVAC_Equipment"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Equipment"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Filter"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#HVAC_Equipment -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#HVAC_Equipment">
+        <rdfs:subClassOf rdf:resource="https://brickschema.org/schema/Brick#Equipment"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Equipment"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#HVAC"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#HX -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#HX">
+        <owl:equivalentClass rdf:resource="https://brickschema.org/schema/Brick#Heat_Exchanger"/>
+        <rdfs:subClassOf rdf:resource="https://brickschema.org/schema/Brick#HVAC_Equipment"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Equipment"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#HX"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Heat_Exchanger -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Heat_Exchanger">
+        <rdfs:subClassOf rdf:resource="https://brickschema.org/schema/Brick#HVAC_Equipment"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Equipment"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Exchanger"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Heat"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Humidifier -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Humidifier">
+        <rdfs:subClassOf rdf:resource="https://brickschema.org/schema/Brick#HVAC_Equipment"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Equipment"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Humidifier"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Location -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Location">
+        <rdfs:subClassOf rdf:resource="https://brickschema.org/schema/Brick#Class"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Point -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Point">
+        <rdfs:subClassOf rdf:resource="https://brickschema.org/schema/Brick#Class"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Point"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Pump -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Pump">
+        <rdfs:subClassOf rdf:resource="https://brickschema.org/schema/Brick#HVAC_Equipment"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Equipment"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Pump"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Sensor -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Sensor">
+        <rdfs:subClassOf rdf:resource="https://brickschema.org/schema/Brick#Point"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Point"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Sensor"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Space_Heater -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Space_Heater">
+        <rdfs:subClassOf rdf:resource="https://brickschema.org/schema/Brick#HVAC_Equipment"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Equipment"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Heater"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Space"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Tag -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Tag"/>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Transformer -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Transformer">
+        <rdfs:subClassOf rdf:resource="https://brickschema.org/schema/Brick#Electrical_Equipment"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Equipment"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Transformer"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Usage_Sensor -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Usage_Sensor">
+        <rdfs:subClassOf rdf:resource="https://brickschema.org/schema/Brick#Sensor"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Point"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Sensor"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Usage"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Valve -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Valve">
+        <rdfs:subClassOf rdf:resource="https://brickschema.org/schema/Brick#HVAC_Equipment"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Equipment"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Valve"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Water_Heater -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Water_Heater">
+        <rdfs:subClassOf rdf:resource="https://brickschema.org/schema/Brick#Equipment"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Equipment"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Heater"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Water"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://brickschema.org/schema/BrickTag#Alarm -->
+
+    <owl:NamedIndividual rdf:about="https://brickschema.org/schema/BrickTag#Alarm"/>
+    
+
+
+    <!-- https://brickschema.org/schema/BrickTag#Boiler -->
+
+    <owl:NamedIndividual rdf:about="https://brickschema.org/schema/BrickTag#Boiler"/>
+    
+
+
+    <!-- https://brickschema.org/schema/BrickTag#Building -->
+
+    <owl:NamedIndividual rdf:about="https://brickschema.org/schema/BrickTag#Building"/>
+    
+
+
+    <!-- https://brickschema.org/schema/BrickTag#Chiller -->
+
+    <owl:NamedIndividual rdf:about="https://brickschema.org/schema/BrickTag#Chiller"/>
+    
+
+
+    <!-- https://brickschema.org/schema/BrickTag#Coil -->
+
+    <owl:NamedIndividual rdf:about="https://brickschema.org/schema/BrickTag#Coil"/>
+    
+
+
+    <!-- https://brickschema.org/schema/BrickTag#Compressor -->
+
+    <owl:NamedIndividual rdf:about="https://brickschema.org/schema/BrickTag#Compressor"/>
+    
+
+
+    <!-- https://brickschema.org/schema/BrickTag#Condenser -->
+
+    <owl:NamedIndividual rdf:about="https://brickschema.org/schema/BrickTag#Condenser"/>
+    
+
+
+    <!-- https://brickschema.org/schema/BrickTag#Cooling -->
+
+    <owl:NamedIndividual rdf:about="https://brickschema.org/schema/BrickTag#Cooling"/>
+    
+
+
+    <!-- https://brickschema.org/schema/BrickTag#Damper -->
+
+    <owl:NamedIndividual rdf:about="https://brickschema.org/schema/BrickTag#Damper"/>
+    
+
+
+    <!-- https://brickschema.org/schema/BrickTag#Electrical -->
+
+    <owl:NamedIndividual rdf:about="https://brickschema.org/schema/BrickTag#Electrical"/>
+    
+
+
+    <!-- https://brickschema.org/schema/BrickTag#Equipment -->
+
+    <owl:NamedIndividual rdf:about="https://brickschema.org/schema/BrickTag#Equipment"/>
+    
+
+
+    <!-- https://brickschema.org/schema/BrickTag#Exchanger -->
+
+    <owl:NamedIndividual rdf:about="https://brickschema.org/schema/BrickTag#Exchanger"/>
+    
+
+
+    <!-- https://brickschema.org/schema/BrickTag#Fan -->
+
+    <owl:NamedIndividual rdf:about="https://brickschema.org/schema/BrickTag#Fan"/>
+    
+
+
+    <!-- https://brickschema.org/schema/BrickTag#Filter -->
+
+    <owl:NamedIndividual rdf:about="https://brickschema.org/schema/BrickTag#Filter"/>
+    
+
+
+    <!-- https://brickschema.org/schema/BrickTag#HVAC -->
+
+    <owl:NamedIndividual rdf:about="https://brickschema.org/schema/BrickTag#HVAC"/>
+    
+
+
+    <!-- https://brickschema.org/schema/BrickTag#HX -->
+
+    <owl:NamedIndividual rdf:about="https://brickschema.org/schema/BrickTag#HX"/>
+    
+
+
+    <!-- https://brickschema.org/schema/BrickTag#Heat -->
+
+    <owl:NamedIndividual rdf:about="https://brickschema.org/schema/BrickTag#Heat"/>
+    
+
+
+    <!-- https://brickschema.org/schema/BrickTag#Heater -->
+
+    <owl:NamedIndividual rdf:about="https://brickschema.org/schema/BrickTag#Heater"/>
+    
+
+
+    <!-- https://brickschema.org/schema/BrickTag#Humidifier -->
+
+    <owl:NamedIndividual rdf:about="https://brickschema.org/schema/BrickTag#Humidifier"/>
+    
+
+
+    <!-- https://brickschema.org/schema/BrickTag#Location -->
+
+    <owl:NamedIndividual rdf:about="https://brickschema.org/schema/BrickTag#Location"/>
+    
+
+
+    <!-- https://brickschema.org/schema/BrickTag#Point -->
+
+    <owl:NamedIndividual rdf:about="https://brickschema.org/schema/BrickTag#Point"/>
+    
+
+
+    <!-- https://brickschema.org/schema/BrickTag#Pump -->
+
+    <owl:NamedIndividual rdf:about="https://brickschema.org/schema/BrickTag#Pump"/>
+    
+
+
+    <!-- https://brickschema.org/schema/BrickTag#Sensor -->
+
+    <owl:NamedIndividual rdf:about="https://brickschema.org/schema/BrickTag#Sensor"/>
+    
+
+
+    <!-- https://brickschema.org/schema/BrickTag#Space -->
+
+    <owl:NamedIndividual rdf:about="https://brickschema.org/schema/BrickTag#Space"/>
+    
+
+
+    <!-- https://brickschema.org/schema/BrickTag#Tower -->
+
+    <owl:NamedIndividual rdf:about="https://brickschema.org/schema/BrickTag#Tower"/>
+    
+
+
+    <!-- https://brickschema.org/schema/BrickTag#Transformer -->
+
+    <owl:NamedIndividual rdf:about="https://brickschema.org/schema/BrickTag#Transformer"/>
+    
+
+
+    <!-- https://brickschema.org/schema/BrickTag#Usage -->
+
+    <owl:NamedIndividual rdf:about="https://brickschema.org/schema/BrickTag#Usage"/>
+    
+
+
+    <!-- https://brickschema.org/schema/BrickTag#Valve -->
+
+    <owl:NamedIndividual rdf:about="https://brickschema.org/schema/BrickTag#Valve"/>
+    
+
+
+    <!-- https://brickschema.org/schema/BrickTag#Water -->
+
+    <owl:NamedIndividual rdf:about="https://brickschema.org/schema/BrickTag#Water"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 1.3.8.1099) http://owlapi.sourceforge.net -->
+

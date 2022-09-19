@@ -1,0 +1,2 @@
+source-uri,target-uri
+https://saref.etsi.org/core/OpenCloseState,https://brickschema.org/schema/Brick#Open_Close_Status

@@ -1,0 +1,750 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#"
+     xml:base="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl"
+     xmlns:mappings="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#entity1 -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#entity1"/>
+    
+
+
+    <!-- http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#entity2 -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#entity2"/>
+    
+
+
+    <!-- http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#measure -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#measure"/>
+    
+
+
+    <!-- http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#relation -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#relation"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#value -->
+
+    <owl:DatatypeProperty rdf:about="https://brickschema.org/schema/Brick#value">
+        <owl:equivalentProperty rdf:resource="https://saref.etsi.org/core/hasValue"/>
+    </owl:DatatypeProperty>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#value</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://saref.etsi.org/core/hasValue</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#value"/>
+        <owl:annotatedTarget rdf:resource="https://saref.etsi.org/core/hasValue"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://saref.etsi.org/core/hasValue -->
+
+    <owl:DatatypeProperty rdf:about="https://saref.etsi.org/core/hasValue"/>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#value</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://saref.etsi.org/core/hasValue</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentProperty"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#value"/>
+        <owl:annotatedTarget rdf:resource="https://saref.etsi.org/core/hasValue"/>
+    </owl:Axiom>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Alarm -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Alarm">
+        <owl:equivalentClass rdf:resource="https://saref.etsi.org/saref4bldg/Alarm"/>
+    </owl:Class>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Alarm</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://saref.etsi.org/saref4bldg/Alarm</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Alarm"/>
+        <owl:annotatedTarget rdf:resource="https://saref.etsi.org/saref4bldg/Alarm"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Boiler -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Boiler">
+        <owl:equivalentClass rdf:resource="https://saref.etsi.org/saref4bldg/Boiler"/>
+    </owl:Class>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Boiler</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://saref.etsi.org/saref4bldg/Boiler</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Boiler"/>
+        <owl:annotatedTarget rdf:resource="https://saref.etsi.org/saref4bldg/Boiler"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Building -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Building">
+        <owl:equivalentClass rdf:resource="https://saref.etsi.org/saref4bldg/Building"/>
+    </owl:Class>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.7030000000000001</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Building</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://saref.etsi.org/saref4bldg/Building</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Building"/>
+        <owl:annotatedTarget rdf:resource="https://saref.etsi.org/saref4bldg/Building"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Chiller -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Chiller">
+        <owl:equivalentClass rdf:resource="https://saref.etsi.org/saref4bldg/Chiller"/>
+    </owl:Class>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Chiller</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://saref.etsi.org/saref4bldg/Chiller</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Chiller"/>
+        <owl:annotatedTarget rdf:resource="https://saref.etsi.org/saref4bldg/Chiller"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Coil -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Coil">
+        <owl:equivalentClass rdf:resource="https://saref.etsi.org/saref4bldg/Coil"/>
+    </owl:Class>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Coil</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://saref.etsi.org/saref4bldg/Coil</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Coil"/>
+        <owl:annotatedTarget rdf:resource="https://saref.etsi.org/saref4bldg/Coil"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Compressor -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Compressor">
+        <owl:equivalentClass rdf:resource="https://saref.etsi.org/saref4bldg/Compressor"/>
+    </owl:Class>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Compressor</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://saref.etsi.org/saref4bldg/Compressor</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Compressor"/>
+        <owl:annotatedTarget rdf:resource="https://saref.etsi.org/saref4bldg/Compressor"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Condenser -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Condenser">
+        <owl:equivalentClass rdf:resource="https://saref.etsi.org/saref4bldg/Condenser"/>
+    </owl:Class>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Condenser</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://saref.etsi.org/saref4bldg/Condenser</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Condenser"/>
+        <owl:annotatedTarget rdf:resource="https://saref.etsi.org/saref4bldg/Condenser"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Cooling_Tower -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Cooling_Tower">
+        <owl:equivalentClass rdf:resource="https://saref.etsi.org/saref4bldg/CoolingTower"/>
+    </owl:Class>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Cooling_Tower</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://saref.etsi.org/saref4bldg/CoolingTower</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Cooling_Tower"/>
+        <owl:annotatedTarget rdf:resource="https://saref.etsi.org/saref4bldg/CoolingTower"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Damper -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Damper">
+        <owl:equivalentClass rdf:resource="https://saref.etsi.org/saref4bldg/Damper"/>
+    </owl:Class>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Damper</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://saref.etsi.org/saref4bldg/Damper</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Damper"/>
+        <owl:annotatedTarget rdf:resource="https://saref.etsi.org/saref4bldg/Damper"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Fan -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Fan">
+        <owl:equivalentClass rdf:resource="https://saref.etsi.org/saref4bldg/Fan"/>
+    </owl:Class>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Fan</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://saref.etsi.org/saref4bldg/Fan</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Fan"/>
+        <owl:annotatedTarget rdf:resource="https://saref.etsi.org/saref4bldg/Fan"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Filter -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Filter">
+        <owl:equivalentClass rdf:resource="https://saref.etsi.org/saref4bldg/Filter"/>
+    </owl:Class>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Filter</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://saref.etsi.org/saref4bldg/Filter</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Filter"/>
+        <owl:annotatedTarget rdf:resource="https://saref.etsi.org/saref4bldg/Filter"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Heat_Exchanger -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Heat_Exchanger">
+        <owl:equivalentClass rdf:resource="https://saref.etsi.org/saref4bldg/HeatExchanger"/>
+    </owl:Class>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.6</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Heat_Exchanger</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://saref.etsi.org/saref4bldg/HeatExchanger</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Heat_Exchanger"/>
+        <owl:annotatedTarget rdf:resource="https://saref.etsi.org/saref4bldg/HeatExchanger"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Humidifier -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Humidifier">
+        <owl:equivalentClass rdf:resource="https://saref.etsi.org/saref4bldg/Humidifier"/>
+    </owl:Class>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Humidifier</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://saref.etsi.org/saref4bldg/Humidifier</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Humidifier"/>
+        <owl:annotatedTarget rdf:resource="https://saref.etsi.org/saref4bldg/Humidifier"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Pump -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Pump">
+        <owl:equivalentClass rdf:resource="https://saref.etsi.org/saref4bldg/Pump"/>
+    </owl:Class>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Pump</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://saref.etsi.org/saref4bldg/Pump</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Pump"/>
+        <owl:annotatedTarget rdf:resource="https://saref.etsi.org/saref4bldg/Pump"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Sensor -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Sensor">
+        <owl:equivalentClass rdf:resource="https://saref.etsi.org/core/Sensor"/>
+        <owl:equivalentClass rdf:resource="https://saref.etsi.org/saref4bldg/Sensor"/>
+    </owl:Class>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.506</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Sensor</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://saref.etsi.org/saref4bldg/Sensor</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Sensor"/>
+        <owl:annotatedTarget rdf:resource="https://saref.etsi.org/saref4bldg/Sensor"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.51</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Sensor</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://saref.etsi.org/core/Sensor</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Sensor"/>
+        <owl:annotatedTarget rdf:resource="https://saref.etsi.org/core/Sensor"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Space_Heater -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Space_Heater">
+        <owl:equivalentClass rdf:resource="https://saref.etsi.org/saref4bldg/SpaceHeater"/>
+    </owl:Class>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Space_Heater</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://saref.etsi.org/saref4bldg/SpaceHeater</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Space_Heater"/>
+        <owl:annotatedTarget rdf:resource="https://saref.etsi.org/saref4bldg/SpaceHeater"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Transformer -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Transformer">
+        <owl:equivalentClass rdf:resource="https://saref.etsi.org/saref4bldg/Transformer"/>
+    </owl:Class>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Transformer</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://saref.etsi.org/saref4bldg/Transformer</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Transformer"/>
+        <owl:annotatedTarget rdf:resource="https://saref.etsi.org/saref4bldg/Transformer"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Usage_Sensor -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Usage_Sensor">
+        <owl:equivalentClass rdf:resource="https://saref.etsi.org/core/Sensor"/>
+        <owl:equivalentClass rdf:resource="https://saref.etsi.org/saref4bldg/Sensor"/>
+    </owl:Class>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.7869999999999999</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Usage_Sensor</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://saref.etsi.org/saref4bldg/Sensor</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Usage_Sensor"/>
+        <owl:annotatedTarget rdf:resource="https://saref.etsi.org/saref4bldg/Sensor"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.575</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Usage_Sensor</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://saref.etsi.org/core/Sensor</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Usage_Sensor"/>
+        <owl:annotatedTarget rdf:resource="https://saref.etsi.org/core/Sensor"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Valve -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Valve">
+        <owl:equivalentClass rdf:resource="https://saref.etsi.org/saref4bldg/Valve"/>
+    </owl:Class>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Valve</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://saref.etsi.org/saref4bldg/Valve</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Valve"/>
+        <owl:annotatedTarget rdf:resource="https://saref.etsi.org/saref4bldg/Valve"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://saref.etsi.org/core/Sensor -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/core/Sensor"/>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.575</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Usage_Sensor</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://saref.etsi.org/core/Sensor</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Usage_Sensor"/>
+        <owl:annotatedTarget rdf:resource="https://saref.etsi.org/core/Sensor"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.51</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Sensor</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://saref.etsi.org/core/Sensor</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Sensor"/>
+        <owl:annotatedTarget rdf:resource="https://saref.etsi.org/core/Sensor"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/Alarm -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/Alarm"/>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Alarm</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://saref.etsi.org/saref4bldg/Alarm</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Alarm"/>
+        <owl:annotatedTarget rdf:resource="https://saref.etsi.org/saref4bldg/Alarm"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/Boiler -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/Boiler"/>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Boiler</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://saref.etsi.org/saref4bldg/Boiler</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Boiler"/>
+        <owl:annotatedTarget rdf:resource="https://saref.etsi.org/saref4bldg/Boiler"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/Building -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/Building"/>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.7030000000000001</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Building</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://saref.etsi.org/saref4bldg/Building</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Building"/>
+        <owl:annotatedTarget rdf:resource="https://saref.etsi.org/saref4bldg/Building"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/Chiller -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/Chiller"/>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Chiller</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://saref.etsi.org/saref4bldg/Chiller</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Chiller"/>
+        <owl:annotatedTarget rdf:resource="https://saref.etsi.org/saref4bldg/Chiller"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/Coil -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/Coil"/>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Coil</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://saref.etsi.org/saref4bldg/Coil</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Coil"/>
+        <owl:annotatedTarget rdf:resource="https://saref.etsi.org/saref4bldg/Coil"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/Compressor -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/Compressor"/>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Compressor</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://saref.etsi.org/saref4bldg/Compressor</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Compressor"/>
+        <owl:annotatedTarget rdf:resource="https://saref.etsi.org/saref4bldg/Compressor"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/Condenser -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/Condenser"/>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Condenser</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://saref.etsi.org/saref4bldg/Condenser</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Condenser"/>
+        <owl:annotatedTarget rdf:resource="https://saref.etsi.org/saref4bldg/Condenser"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/CoolingTower -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/CoolingTower"/>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Cooling_Tower</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://saref.etsi.org/saref4bldg/CoolingTower</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Cooling_Tower"/>
+        <owl:annotatedTarget rdf:resource="https://saref.etsi.org/saref4bldg/CoolingTower"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/Damper -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/Damper"/>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Damper</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://saref.etsi.org/saref4bldg/Damper</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Damper"/>
+        <owl:annotatedTarget rdf:resource="https://saref.etsi.org/saref4bldg/Damper"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/Fan -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/Fan"/>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Fan</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://saref.etsi.org/saref4bldg/Fan</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Fan"/>
+        <owl:annotatedTarget rdf:resource="https://saref.etsi.org/saref4bldg/Fan"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/Filter -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/Filter"/>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Filter</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://saref.etsi.org/saref4bldg/Filter</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Filter"/>
+        <owl:annotatedTarget rdf:resource="https://saref.etsi.org/saref4bldg/Filter"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/HeatExchanger -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/HeatExchanger"/>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.6</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Heat_Exchanger</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://saref.etsi.org/saref4bldg/HeatExchanger</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Heat_Exchanger"/>
+        <owl:annotatedTarget rdf:resource="https://saref.etsi.org/saref4bldg/HeatExchanger"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/Humidifier -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/Humidifier"/>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Humidifier</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://saref.etsi.org/saref4bldg/Humidifier</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Humidifier"/>
+        <owl:annotatedTarget rdf:resource="https://saref.etsi.org/saref4bldg/Humidifier"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/Pump -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/Pump"/>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Pump</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://saref.etsi.org/saref4bldg/Pump</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Pump"/>
+        <owl:annotatedTarget rdf:resource="https://saref.etsi.org/saref4bldg/Pump"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/Sensor -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/Sensor"/>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.7869999999999999</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Usage_Sensor</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://saref.etsi.org/saref4bldg/Sensor</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Usage_Sensor"/>
+        <owl:annotatedTarget rdf:resource="https://saref.etsi.org/saref4bldg/Sensor"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.506</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Sensor</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://saref.etsi.org/saref4bldg/Sensor</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Sensor"/>
+        <owl:annotatedTarget rdf:resource="https://saref.etsi.org/saref4bldg/Sensor"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/SpaceHeater -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/SpaceHeater"/>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Space_Heater</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://saref.etsi.org/saref4bldg/SpaceHeater</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Space_Heater"/>
+        <owl:annotatedTarget rdf:resource="https://saref.etsi.org/saref4bldg/SpaceHeater"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/Transformer -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/Transformer"/>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Transformer</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://saref.etsi.org/saref4bldg/Transformer</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Transformer"/>
+        <owl:annotatedTarget rdf:resource="https://saref.etsi.org/saref4bldg/Transformer"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://saref.etsi.org/saref4bldg/Valve -->
+
+    <owl:Class rdf:about="https://saref.etsi.org/saref4bldg/Valve"/>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Valve</entity2>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://saref.etsi.org/saref4bldg/Valve</entity1>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="https://brickschema.org/schema/Brick#Valve"/>
+        <owl:annotatedTarget rdf:resource="https://saref.etsi.org/saref4bldg/Valve"/>
+    </owl:Axiom>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 1.3.8.1099) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,351 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://brickschema.org/schema/1.2/Brick#"
+     xml:base="https://brickschema.org/schema/1.2/Brick"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://brickschema.org/schema/1.2/Brick"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#hasTag -->
+
+    <owl:ObjectProperty rdf:about="https://brickschema.org/schema/Brick#hasTag">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="https://brickschema.org/schema/Brick#Tag"/>
+        <owl:inverseOf rdf:resource="https://brickschema.org/schema/Brick#isTagOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#isTagOf -->
+
+    <owl:ObjectProperty rdf:about="https://brickschema.org/schema/Brick#isTagOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="https://brickschema.org/schema/Brick#Tag"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://schema.org/Person -->
+
+    <owl:Class rdf:about="http://schema.org/Person"/>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Building -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Building">
+        <rdfs:subClassOf rdf:resource="https://brickschema.org/schema/Brick#Location"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Building"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Location"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Class -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Class"/>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Equipment -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Equipment">
+        <rdfs:subClassOf rdf:resource="https://brickschema.org/schema/Brick#Class"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Equipment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Floor -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Floor">
+        <owl:equivalentClass rdf:resource="https://brickschema.org/schema/Brick#Storey"/>
+        <rdfs:subClassOf rdf:resource="https://brickschema.org/schema/Brick#Location"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Floor"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Location"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Interface -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Interface">
+        <rdfs:subClassOf rdf:resource="https://brickschema.org/schema/Brick#Lighting_Equipment"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Equipment"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Interface"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Lighting_Equipment -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Lighting_Equipment">
+        <rdfs:subClassOf rdf:resource="https://brickschema.org/schema/Brick#Equipment"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Equipment"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Lighting"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Location -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Location">
+        <rdfs:subClassOf rdf:resource="https://brickschema.org/schema/Brick#Class"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Site -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Site">
+        <rdfs:subClassOf rdf:resource="https://brickschema.org/schema/Brick#Location"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Location"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Site"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Space -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Space">
+        <rdfs:subClassOf rdf:resource="https://brickschema.org/schema/Brick#Location"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Location"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Space"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Storey -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Storey">
+        <rdfs:subClassOf rdf:resource="https://brickschema.org/schema/Brick#Location"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Location"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Storey"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Tag -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Tag"/>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Zone -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Zone">
+        <rdfs:subClassOf rdf:resource="https://brickschema.org/schema/Brick#Location"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Location"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://brickschema.org/schema/Brick#hasTag"/>
+                        <owl:hasValue rdf:resource="https://brickschema.org/schema/BrickTag#Zone"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://brickschema.org/schema/BrickTag#Building -->
+
+    <owl:NamedIndividual rdf:about="https://brickschema.org/schema/BrickTag#Building"/>
+    
+
+
+    <!-- https://brickschema.org/schema/BrickTag#Equipment -->
+
+    <owl:NamedIndividual rdf:about="https://brickschema.org/schema/BrickTag#Equipment"/>
+    
+
+
+    <!-- https://brickschema.org/schema/BrickTag#Floor -->
+
+    <owl:NamedIndividual rdf:about="https://brickschema.org/schema/BrickTag#Floor"/>
+    
+
+
+    <!-- https://brickschema.org/schema/BrickTag#Interface -->
+
+    <owl:NamedIndividual rdf:about="https://brickschema.org/schema/BrickTag#Interface"/>
+    
+
+
+    <!-- https://brickschema.org/schema/BrickTag#Lighting -->
+
+    <owl:NamedIndividual rdf:about="https://brickschema.org/schema/BrickTag#Lighting"/>
+    
+
+
+    <!-- https://brickschema.org/schema/BrickTag#Location -->
+
+    <owl:NamedIndividual rdf:about="https://brickschema.org/schema/BrickTag#Location"/>
+    
+
+
+    <!-- https://brickschema.org/schema/BrickTag#Site -->
+
+    <owl:NamedIndividual rdf:about="https://brickschema.org/schema/BrickTag#Site"/>
+    
+
+
+    <!-- https://brickschema.org/schema/BrickTag#Space -->
+
+    <owl:NamedIndividual rdf:about="https://brickschema.org/schema/BrickTag#Space"/>
+    
+
+
+    <!-- https://brickschema.org/schema/BrickTag#Storey -->
+
+    <owl:NamedIndividual rdf:about="https://brickschema.org/schema/BrickTag#Storey"/>
+    
+
+
+    <!-- https://brickschema.org/schema/BrickTag#Zone -->
+
+    <owl:NamedIndividual rdf:about="https://brickschema.org/schema/BrickTag#Zone"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 1.3.8.1099) http://owlapi.sourceforge.net -->
+

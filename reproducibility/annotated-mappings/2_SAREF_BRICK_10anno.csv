@@ -1,0 +1,11 @@
+source-uri,target-uri
+https://saref.etsi.org/core/Command,https://brickschema.org/schema/Brick#Command
+https://saref.etsi.org/core/FeatureOfInterest,http://www.w3.org/ns/sosa/FeatureOfInterest
+https://saref.etsi.org/core/Gas,https://brickschema.org/schema/Brick#Gas
+https://saref.etsi.org/core/Meter,https://brickschema.org/schema/Brick#Meter
+https://saref.etsi.org/core/Sensor,https://brickschema.org/schema/Brick#Sensor
+https://saref.etsi.org/core/Switch,https://brickschema.org/schema/Brick#Switch
+https://saref.etsi.org/core/Water,https://brickschema.org/schema/Brick#Water
+https://saref.etsi.org/core/OffCommand,https://brickschema.org/schema/Brick#Off_Command
+https://saref.etsi.org/core/OnCommand,https://brickschema.org/schema/Brick#On_Command
+https://saref.etsi.org/core/TemperatureSensor,https://brickschema.org/schema/Brick#Temperature_Sensor

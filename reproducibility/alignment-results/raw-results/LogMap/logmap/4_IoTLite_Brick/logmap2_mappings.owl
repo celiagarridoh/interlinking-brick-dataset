@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#"
+     xml:base="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl"
+     xmlns:mappings="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#entity1 -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#entity1"/>
+    
+
+
+    <!-- http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#entity2 -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#entity2"/>
+    
+
+
+    <!-- http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#measure -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#measure"/>
+    
+
+
+    <!-- http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#relation -->
+
+    <owl:AnnotationProperty rdf:about="http://www.cs.ox.ac.uk/isg/projects/LogMap/mappings.owl#relation"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.oclc.org/NET/ssnx/ssn#System -->
+
+    <owl:Class rdf:about="http://purl.oclc.org/NET/ssnx/ssn#System">
+        <owl:equivalentClass rdf:resource="https://brickschema.org/schema/Brick#System"/>
+    </owl:Class>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn#System</entity1>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#System</entity2>
+        <owl:annotatedSource rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#System"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedTarget rdf:resource="https://brickschema.org/schema/Brick#System"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.org/NET/ssnx/qu/qu#Unit -->
+
+    <owl:Class rdf:about="http://purl.org/NET/ssnx/qu/qu#Unit">
+        <owl:equivalentClass rdf:resource="http://qudt.org/vocab/unit/Unit"/>
+    </owl:Class>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.7030000000000001</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/NET/ssnx/qu/qu#Unit</entity1>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://qudt.org/vocab/unit/Unit</entity2>
+        <owl:annotatedSource rdf:resource="http://purl.org/NET/ssnx/qu/qu#Unit"/>
+        <owl:annotatedTarget rdf:resource="http://qudt.org/vocab/unit/Unit"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://qudt.org/vocab/unit/Unit -->
+
+    <owl:Class rdf:about="http://qudt.org/vocab/unit/Unit"/>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.7030000000000001</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.org/NET/ssnx/qu/qu#Unit</entity1>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://qudt.org/vocab/unit/Unit</entity2>
+        <owl:annotatedSource rdf:resource="http://purl.org/NET/ssnx/qu/qu#Unit"/>
+        <owl:annotatedTarget rdf:resource="http://qudt.org/vocab/unit/Unit"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://www.w3.org/2003/01/geo/wgs84_pos#Point -->
+
+    <owl:Class rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#Point">
+        <owl:equivalentClass rdf:resource="https://brickschema.org/schema/Brick#Point"/>
+    </owl:Class>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.7030000000000001</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2003/01/geo/wgs84_pos#Point</entity1>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Point</entity2>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+        <owl:annotatedTarget rdf:resource="https://brickschema.org/schema/Brick#Point"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#Point -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#Point"/>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.7030000000000001</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2003/01/geo/wgs84_pos#Point</entity1>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#Point</entity2>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedSource rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#Point"/>
+        <owl:annotatedTarget rdf:resource="https://brickschema.org/schema/Brick#Point"/>
+    </owl:Axiom>
+    
+
+
+    <!-- https://brickschema.org/schema/Brick#System -->
+
+    <owl:Class rdf:about="https://brickschema.org/schema/Brick#System"/>
+    <owl:Axiom>
+        <measure rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</measure>
+        <relation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">=</relation>
+        <entity1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.oclc.org/NET/ssnx/ssn#System</entity1>
+        <entity2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://brickschema.org/schema/Brick#System</entity2>
+        <owl:annotatedSource rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#System"/>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#equivalentClass"/>
+        <owl:annotatedTarget rdf:resource="https://brickschema.org/schema/Brick#System"/>
+    </owl:Axiom>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 1.3.8.1099) http://owlapi.sourceforge.net -->
+

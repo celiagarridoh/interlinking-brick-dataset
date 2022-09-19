@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns="http://knowledgeweb.semanticweb.org/heterogeneity/alignment"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<Alignment>
+<xml>yes</xml>
+<level>0</level>
+<type>??</type>
+<onto1>https://saref.etsi.org/core/</onto1>
+<onto2>https://saref.etsi.org/core/</onto2>
+<uri1>https://saref.etsi.org/core/</uri1>
+<uri2>https://saref.etsi.org/core/</uri2>
+<map>
+	<Cell>
+		<entity1 rdf:resource="https://saref.etsi.org/core/Light"/>
+		<entity2 rdf:resource="https://brickschema.org/schema/Brick#Lighting"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="https://saref.etsi.org/core/Sensor"/>
+		<entity2 rdf:resource="https://brickschema.org/schema/Brick#Usage_Sensor"/>
+		<measure rdf:datatype="xsd:float">0.75</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="https://saref.etsi.org/core/Sensor"/>
+		<entity2 rdf:resource="https://brickschema.org/schema/Brick#Sensor"/>
+		<measure rdf:datatype="xsd:float">0.52</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="https://saref.etsi.org/core/FeatureOfInterest"/>
+		<entity2 rdf:resource="http://www.w3.org/ns/sosa/FeatureOfInterest"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="https://saref.etsi.org/core/OnCommand"/>
+		<entity2 rdf:resource="https://brickschema.org/schema/Brick#Off_Command"/>
+		<measure rdf:datatype="xsd:float">0.82</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="https://saref.etsi.org/core/Gas"/>
+		<entity2 rdf:resource="https://brickschema.org/schema/Brick#Gas"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="https://saref.etsi.org/core/OffCommand"/>
+		<entity2 rdf:resource="https://brickschema.org/schema/Brick#On_Command"/>
+		<measure rdf:datatype="xsd:float">0.82</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="https://saref.etsi.org/core/GetCommand"/>
+		<entity2 rdf:resource="https://brickschema.org/schema/Brick#Command"/>
+		<measure rdf:datatype="xsd:float">0.71</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="https://saref.etsi.org/core/GetCommand"/>
+		<entity2 rdf:resource="https://brickschema.org/schema/Brick#On_Off_Command"/>
+		<measure rdf:datatype="xsd:float">0.73</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="https://saref.etsi.org/core/TemperatureSensor"/>
+		<entity2 rdf:resource="https://brickschema.org/schema/Brick#Temperature_Sensor"/>
+		<measure rdf:datatype="xsd:float">0.72</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="https://saref.etsi.org/core/Meter"/>
+		<entity2 rdf:resource="https://brickschema.org/schema/Brick#Meter"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="https://saref.etsi.org/core/Water"/>
+		<entity2 rdf:resource="https://brickschema.org/schema/Brick#Water"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="https://saref.etsi.org/core/OpenState"/>
+		<entity2 rdf:resource="https://brickschema.org/schema/Brick#Mode_Status"/>
+		<measure rdf:datatype="xsd:float">0.22</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="https://saref.etsi.org/core/Command"/>
+		<entity2 rdf:resource="https://brickschema.org/schema/Brick#Command"/>
+		<measure rdf:datatype="xsd:float">0.62</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="https://saref.etsi.org/core/Command"/>
+		<entity2 rdf:resource="https://brickschema.org/schema/Brick#On_Off_Command"/>
+		<measure rdf:datatype="xsd:float">0.96</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="https://saref.etsi.org/core/Switch"/>
+		<entity2 rdf:resource="https://brickschema.org/schema/Brick#Switch"/>
+		<measure rdf:datatype="xsd:float">0.5</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+</Alignment>
+</rdf:RDF>

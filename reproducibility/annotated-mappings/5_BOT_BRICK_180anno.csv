@@ -1,0 +1,7 @@
+source-uri,target-uri
+https://w3id.org/bot#Building,https://brickschema.org/schema/Brick#Building
+https://w3id.org/bot#Interface,https://brickschema.org/schema/Brick#Interface
+https://w3id.org/bot#Site,https://brickschema.org/schema/Brick#Site
+https://w3id.org/bot#Space,https://brickschema.org/schema/Brick#Space
+https://w3id.org/bot#Storey,https://brickschema.org/schema/Brick#Storey
+https://w3id.org/bot#Zone,https://brickschema.org/schema/Brick#Zone

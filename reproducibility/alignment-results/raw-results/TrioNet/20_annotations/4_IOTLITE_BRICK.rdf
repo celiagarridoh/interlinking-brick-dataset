@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='utf-8'?>
+        <rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment'
+            xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' 
+            xmlns:xsd='http://www.w3.org/2001/XMLSchema#' 
+            alignmentSource='TrioNet'>
+
+        <Alignment>
+            <xml>yes</xml>
+            <level></level>
+            <type></type>
+            <onto1>IoTLite</onto1>
+            <onto2>Brick</onto2>
+            <uri1></uri1>
+            <uri2>https://brickschema.org/schema/1.2/Brick</uri2>
+        
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#System"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#System"/>
+                    <measure "xsd:float">0.9999999999797721</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Sensor"/>
+                    <measure "xsd:float">0.9999999999797721</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Current_Sensor"/>
+                    <measure "xsd:float">0.9999999999571619</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Enthalpy_Sensor"/>
+                    <measure "xsd:float">0.9999999999571619</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Contact_Sensor"/>
+                    <measure "xsd:float">0.9999999999571619</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Capacity_Sensor"/>
+                    <measure "xsd:float">0.9999999999571619</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Speed_Sensor"/>
+                    <measure "xsd:float">0.9999999999571619</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Direction_Sensor"/>
+                    <measure "xsd:float">0.9999999999571619</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Adjust_Sensor"/>
+                    <measure "xsd:float">0.9999999999571619</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Angle_Sensor"/>
+                    <measure "xsd:float">0.9999999999571619</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Usage_Sensor"/>
+                    <measure "xsd:float">0.9999999999571619</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Luminance_Sensor"/>
+                    <measure "xsd:float">0.9999999999571619</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="http://purl.org/NET/ssnx/qu/qu#QuantityKind"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Quantity"/>
+                    <measure "xsd:float">0.9999999999571619</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Entity"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#EntityProperty"/>
+                    <measure "xsd:float">0.9999999998934005</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#VirtualEntity"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#EntityProperty"/>
+                    <measure "xsd:float">0.9999999998934005</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#TagDevice"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Tag"/>
+                    <measure "xsd:float">0.9999999998934005</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Service"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Security_Service_Room"/>
+                    <measure "xsd:float">0.9999999998934005</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Service"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Sports_Service_Room"/>
+                    <measure "xsd:float">0.9999999998934005</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map>
+            <map>
+                <Cell>
+                    <entity1 rdf:resource="http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Service"/>
+                    <entity2 rdf:resource="https://brickschema.org/schema/Brick#Service_Room"/>
+                    <measure "xsd:float">0.9999999998934005</measure/>
+                    <relation>=</relation>
+                </Cell>
+            </map></Alignment>
+        </rdf:RDF>
+        

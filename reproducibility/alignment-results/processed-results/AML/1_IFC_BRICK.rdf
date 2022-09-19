@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment'
+	 xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' 
+	 xmlns:xsd='http://www.w3.org/2001/XMLSchema#' 
+	 alignmentSource='AgreementMakerLight'>
+
+<Alignment>
+	<xml>yes</xml>
+	<level>0</level>
+	<type>11</type>
+	<onto1>https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL</onto1>
+	<onto2>https://brickschema.org/schema/1.2/Brick</onto2>
+	<uri1>https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL</uri1>
+	<uri2>https://brickschema.org/schema/1.2/Brick</uri2>
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpaceHeater"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Space_Heater"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.894</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcHeatExchanger"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Heat_Exchanger"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8922</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCoolingTower"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Cooling_Tower"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.8764</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCondenser"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Condenser"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6721</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCompressorType"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Compressor"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6488</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTransformerType"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Transformer"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6398</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcHumidifierType"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Humidifier"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6398</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcChillerType"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Chiller"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6332</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcFurnitureType"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Furniture"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6309</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcBoilerType"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Boiler"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6234</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCoilType"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Coil"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6195</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcDamperType"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Damper"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6071</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcFilterType"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Filter"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6045</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPumpType"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Pump"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6045</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+</Alignment>
+</rdf:RDF>

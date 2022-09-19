@@ -1,0 +1,3 @@
+source-uri,target-uri
+http://purl.oclc.org/NET/ssnx/ssn#System,https://brickschema.org/schema/Brick#System
+http://purl.oclc.org/NET/ssnx/ssn#Sensor,https://brickschema.org/schema/Brick#Sensor

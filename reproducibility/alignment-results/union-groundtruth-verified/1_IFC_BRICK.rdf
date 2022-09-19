@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment'
+	 xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' 
+	 xmlns:xsd='http://www.w3.org/2001/XMLSchema#' 
+	 alignmentSource='ManuallyVerified'>
+
+<Alignment>
+	<xml>yes</xml>
+	<level>0</level>
+	<type>??</type>
+	<onto1>https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL</onto1>
+	<onto2>https://brickschema.org/schema/1.2/Brick</onto2>
+	<uri1></uri1>
+	<uri2>https://brickschema.org/schema/1.2/Brick</uri2>
+
+    <map>
+		<Cell>
+			<entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpaceHeater"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Space_Heater"/>
+			<measure "xsd:float">1.00</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+    <map>
+		<Cell>
+			<entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcHeatExchanger"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Heat_Exchanger"/>
+			<measure "xsd:float">1.00</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+    <map>
+		<Cell>
+			<entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCoolingTower"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Cooling_Tower"/>
+			<measure "xsd:float">1.00</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+    <map>
+		<Cell>
+			<entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCondenser"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Condenser"/>
+			<measure "xsd:float">1.00</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+    <map>
+		<Cell>
+			<entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcShadingDevice"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Shading_System"/>
+			<measure "xsd:float">1.00</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+    <map>
+		<Cell>
+			<entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpatialZone"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Zone"/>
+			<measure "xsd:float">1.00</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+    <map>
+		<Cell>
+			<entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcStructuralLoad"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Load_Setpoint"/>
+			<measure "xsd:float">1.00</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+    <map>
+		<Cell>
+			<entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSite"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Site"/>
+			<measure "xsd:float">1.00</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+    <map>
+		<Cell>
+			<entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpace"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Space"/>
+			<measure "xsd:float">1.00</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+    <map>
+		<Cell>
+			<entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcProperty"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#EntityProperty"/>
+			<measure "xsd:float">1.00</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+    <map>
+		<Cell>
+			<entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcPostalAddress"/>
+			<entity2 rdf:resource="http://www.w3.org/2006/vcard/ns#Address"/>
+			<measure "xsd:float">1.00</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+    <map>
+		<Cell>
+			<entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcQuantityTime"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Time_Parameter"/>
+			<measure "xsd:float">1.00</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+    <map>
+		<Cell>
+			<entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSystem"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#System"/>
+			<measure "xsd:float">1.00</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+    <map>
+		<Cell>
+			<entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTransformer"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Transformer"/>
+			<measure "xsd:float">1.00</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+    <map>
+		<Cell>
+			<entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcFan"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Fan"/>
+			<measure "xsd:float">1.00</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+    <map>
+		<Cell>
+			<entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcFilter"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Filter"/>
+			<measure "xsd:float">1.00</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+    <map>
+		<Cell>
+			<entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcAlarm"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Alarm"/>
+			<measure "xsd:float">1.00</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+    <map>
+		<Cell>
+			<entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcDamper"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Damper"/>
+			<measure "xsd:float">1.00</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+    <map>
+		<Cell>
+			<entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCompressor"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Compressor"/>
+			<measure "xsd:float">1.00</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+    <map>
+		<Cell>
+			<entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcParameterValue"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Parameter"/>
+			<measure "xsd:float">1.00</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+    <map>
+		<Cell>
+			<entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcFlowInstrument"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Flow_Sensor"/>
+			<measure "xsd:float">1.00</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+    <map>
+		<Cell>
+			<entity1 rdf:resource="https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcFlowMeter"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Flow_Sensor"/>
+			<measure "xsd:float">1.00</measure>
+			<relation>=</relation>
+		</Cell>
+	</map></Alignment>
+</rdf:RDF>

@@ -1,0 +1,8 @@
+source-uri,target-uri
+https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCompressor,https://brickschema.org/schema/Brick#Compressor
+https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcDamper,https://brickschema.org/schema/Brick#Damper
+https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcFilter,https://brickschema.org/schema/Brick#Filter
+https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcTransformer,https://brickschema.org/schema/Brick#Transformer
+https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCoolingTower,https://brickschema.org/schema/Brick#Cooling_Tower
+https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcHeatExchanger,https://brickschema.org/schema/Brick#Heat_Exchanger
+https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcCondenser,https://brickschema.org/schema/Brick#Condenser

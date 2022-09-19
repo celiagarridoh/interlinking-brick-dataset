@@ -1,0 +1,7 @@
+https://w3id.org/bot#Zone|https://brickschema.org/schema/Brick#Zone|=|0.5|CLS
+https://w3id.org/bot#Interface|https://brickschema.org/schema/Brick#Interface|=|0.51|CLS
+https://w3id.org/bot#Space|https://brickschema.org/schema/Brick#Space|=|0.5|CLS
+https://w3id.org/bot#Building|https://brickschema.org/schema/Brick#Building|=|0.5|CLS
+https://w3id.org/bot#Storey|https://brickschema.org/schema/Brick#Storey|=|0.51|CLS
+https://w3id.org/bot#Site|https://brickschema.org/schema/Brick#Site|=|0.5|CLS
+https://schema.org/Person|http://schema.org/Person|=|0.7|CLS

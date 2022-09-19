@@ -1,0 +1,3 @@
+source-uri,target-uri
+https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcSpaceHeater,https://brickschema.org/schema/Brick#Space_Heater
+https://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2_TC1/OWL#IfcAlarm,https://brickschema.org/schema/Brick#Alarm

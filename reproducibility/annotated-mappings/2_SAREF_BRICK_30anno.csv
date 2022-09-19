@@ -1,0 +1,2 @@
+source-uri,target-uri
+https://saref.etsi.org/core/StartStopState,https://brickschema.org/schema/Brick#Start_Stop_Status

@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment'
+	 xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' 
+	 xmlns:xsd='http://www.w3.org/2001/XMLSchema#' 
+	 alignmentSource='AgreementMakerLight'>
+
+<Alignment>
+	<xml>yes</xml>
+	<level>0</level>
+	<type>??</type>
+	<onto1>https://saref.etsi.org/saref4bldg/</onto1>
+	<onto2>https://brickschema.org/schema/1.2/Brick</onto2>
+	<uri1>https://saref.etsi.org/saref4bldg/</uri1>
+	<uri2>https://brickschema.org/schema/1.2/Brick</uri2>
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://saref.etsi.org/saref4bldg/Compressor"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Compressor"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.99</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://saref.etsi.org/saref4bldg/Building"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Building"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9897</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://saref.etsi.org/saref4bldg/Transformer"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Transformer"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9881</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://saref.etsi.org/saref4bldg/Humidifier"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Humidifier"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9881</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://saref.etsi.org/saref4bldg/SpaceHeater"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Space_Heater"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9859</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://saref.etsi.org/saref4bldg/Chiller"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Chiller"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.985</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://saref.etsi.org/saref4bldg/HeatExchanger"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Heat_Exchanger"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9806</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://saref.etsi.org/saref4bldg/Fan"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Fan"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9801</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://saref.etsi.org/saref4bldg/Coil"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Coil"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9801</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://saref.etsi.org/saref4bldg/Damper"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Damper"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9801</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://saref.etsi.org/core/Sensor"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Sensor"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9801</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://saref.etsi.org/saref4bldg/Sensor"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Sensor"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9801</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://saref.etsi.org/saref4bldg/Valve"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Valve"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9801</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://saref.etsi.org/saref4bldg/Boiler"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Boiler"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9801</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://saref.etsi.org/saref4bldg/Alarm"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Alarm"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9801</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://saref.etsi.org/saref4bldg/Condenser"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Condenser"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9801</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://saref.etsi.org/saref4bldg/Pump"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Pump"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9801</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://saref.etsi.org/saref4bldg/CoolingTower"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Cooling_Tower"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9801</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://saref.etsi.org/saref4bldg/Filter"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Filter"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9801</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+	<map>
+		<Cell>
+			<entity1 rdf:resource="https://saref.etsi.org/saref4bldg/Tank"/>
+			<entity2 rdf:resource="https://brickschema.org/schema/Brick#Water_Tank"/>
+			<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7188</measure>
+			<relation>=</relation>
+		</Cell>
+	</map>
+
+</Alignment>
+</rdf:RDF>
