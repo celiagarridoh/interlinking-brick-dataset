@@ -1,5 +1,5 @@
 # DATA22
-Private files and parsing scripts for DATA22 Workshop (BuildSys/Sensys)
+Source files, alignmnet results and ground truth data files for DATA22 Workshop (BuildSys/Sensys).
 
 ### Folder structure
     .
